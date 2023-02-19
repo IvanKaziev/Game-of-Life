@@ -38,7 +38,6 @@ for gen in range(count_gen - 1):
                 neighbours += 1
             if past_world[(line + 1) % world_hight][(symbol + 1) % world_length] == '*':
                 neighbours += 1
-                
             if  past_world[line][symbol] == ' ' and neighbours == 3:
                 new_line.append('*')
             elif past_world[line][symbol] == ' ':
